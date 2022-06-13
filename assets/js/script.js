@@ -46,6 +46,6 @@ const form = document.getElementById("email_form");
 form.addEventListener("submit", function (e) {
     setTimeout(function() {
     submitButton.value = "Sending...";
-    submitButton.disabled = true;
+    submitButton.disabled = true; // Arbitrary comment
     }, 1);
 });
