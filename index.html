@@ -218,19 +218,19 @@
 
 
                     <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                        <form>
+                        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
                             <div class="form-group">
-                                <input type="text" class="form-control " required="required" placeholder="Your Name" />
+                                <input type="text" class="form-control" name="subject" required="required" placeholder="Your Email" />
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control " required="required" placeholder="Your Email" />
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" required="required" class="form-control"
+                                <textarea required="required" name="text" class="form-control"
                                     style="min-height: 150px;" placeholder="Message"></textarea>
                             </div>
+                            <input type="hidden" name="access_token" value="mo6gntkf13qj206wyk9f35wt" />
+                            <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                             <div class="form-group">
-                                <button type="submit" class="btn btn-block btn-lg btn-danger">SUBMIT REQUEST</button>
+                                <button id="submit_form" type="submit" class="btn btn-block btn-lg btn-danger">Submit</button>
                             </div>
 
                         </form>
