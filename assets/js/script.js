@@ -47,6 +47,5 @@ form.addEventListener("submit", function (e) {
     setTimeout(function() {
     submitButton.value = "Sending...";
     submitButton.disabled = true;
-    window.location.href = "https://Sadek-Mohammed.github.io/october-math-circle/";
     }, 1);
 });
