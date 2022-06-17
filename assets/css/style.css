@@ -111,7 +111,33 @@ body {
     background: #E9E9E9;
     color: #000;
 }
-
+.format-line {
+    background: #fff;
+    color: #000;
+}
+.comm-sec {
+    background:rgb(139, 0, 16);
+    color: #fff;
+}
+.topics-list{
+    list-style-type:  none;
+}
+.topic{
+    position: relative;
+    list-style-type: none;
+    font-size: 20px;
+}
+.container-timer div{
+    font-size: 20px;
+}
+.topic:before{
+    content: '\2714\0020';
+    font-size: 1.2em !important;
+    margin-right: 10px;
+    margin-left: -14px;
+    color: #2cba6c;
+    
+}
     .tag-line h2 {
         font-size: 20px;
         font-weight: 900;
@@ -319,5 +345,13 @@ h1::after {
   
   li span {
     font-size: calc(3.375rem * 0.75);
+  }
+
+  .topic{
+    font-size: calc(1.375em * 0.75);
+  }
+
+  .container-timer div{
+    font-size: calc(1.375em * 0.75);
   }
 }
