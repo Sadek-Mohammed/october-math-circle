@@ -30,12 +30,12 @@ body {
     ===================================*/
 
 .logo-custom {
-    max-height: 40px;
+    max-height: 68px;
 }
 
 #menu {
-    background-color:rgb(139, 0, 16);
-    color: #fff;
+    background-color: #fff/*rgb(139, 0, 16)*/;
+    color:/* #fff*/ rgb(139, 0, 16);
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 1px;
@@ -48,7 +48,7 @@ body {
 }
 
     .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
-        color: #FFF;
+        color:/* #FFF*/ rgb(139, 0, 16);
         padding: 22px 10px;
     }
 
@@ -63,7 +63,7 @@ body {
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
-    color: #fff;
+    color: /*rgb(139, 0, 16)*/#fff;
     background-attachment: fixed;
 }
 
@@ -355,3 +355,7 @@ h1::after {
     font-size: calc(1.375em * 0.75);
   }
 }
+.navbar-brand{
+    padding: 0 !important;
+}
+
