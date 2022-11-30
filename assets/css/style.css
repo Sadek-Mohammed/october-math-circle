@@ -47,10 +47,14 @@ body {
     border-color: transparent;
 }
 
-    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
-        color:/* #FFF*/ rgb(139, 0, 16);
-        padding: 22px 10px;
-    }
+.nav-linker,
+.nav-linker:visited, 
+.nav-linker:link,
+.nav-linker:hover,
+.nav-linker:active{
+    color: rgb(139, 0, 16)!important; 
+    padding: 22px 10px;
+}
 
 .navbar-title-title{
     color:  rgb(139, 0, 16);
@@ -375,4 +379,71 @@ h1::after {
 
 .navbar-right li a{
     font-size: 20px;
+}
+
+
+.icon-bar{
+    background-color: #000!important;
+}
+
+.navbar-toggle:hover + .icon-bar{
+    background-color: #fff!important;
+}
+
+.navbar-collapse{
+    z-index: 900;
+}
+
+.contest{
+    border: 1px solid rgb(139, 0, 16);
+}
+
+#contests-sec{
+    padding-bottom: 35px;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-photo{
+    width: 100vw;
+    max-width: 502px;
+}
+.img-cover{
+    width: 100%;
+}
+
+.book hr{
+    width: 100%;
+    border: 1px solid rgb(139, 0, 16);
+}
+.book p{
+    font-size: 2em;
+    text-align: center;
+}
+.book-description{
+    font-size: 1.5em;
+    padding: 25px 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .book-description{
+        padding: 25px 80px;
+    }
+}
+
+.swiper{
+    width: 100%;
+    max-width: 75rem;
+    text-align: center;
+}
+
+
+.swiper-img{
+    width: 100%;
+    height:auto;
 }

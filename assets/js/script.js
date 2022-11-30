@@ -3,7 +3,7 @@
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
- /// Arbitrary 3 
+  /// Arbitrary 3 
   //I'm adding this section so I don't have to keep updating this pen every year :-)
   //remove this if you don't need it
   let today = new Date(),
@@ -44,8 +44,36 @@
 const submitButton = document.getElementById("submit_form");
 const form = document.getElementById("email_form");
 form.addEventListener("submit", function (e) {
-    setTimeout(function() {
+  setTimeout(function () {
     submitButton.value = "Sending...";
     submitButton.disabled = true; // Arbitrary comment
-    }, 1);
+  }, 1);
+});
+
+
+const swiper = new Swiper('.swiper', {
+  autoHeight: false,
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  autoplay: {
+    delay: 3000,
+  },
 });
